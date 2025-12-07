@@ -27,6 +27,36 @@
   text-align: center;
 }
 
+h4 {
+  text-align: left;
+}
+
+.h4-1 {
+  text-align: right;
+  margin: -43px 0px 0px 0px;
+}
+
+h5 {
+  border: 2px solid black;
+  margin: 10px 100px 10px 0px;
+  padding: 5px;
+  text-align: center;
+}
+
+.h5-1 {
+  border: 2px solid black;
+  margin: -40px 16px 10px 394px;
+  text-align: center;
+  padding: 5px;
+}
+
+.h5-2 {
+  border: 2px solid black;
+  margin: 220px 50px 20px 50px;
+  padding: 5px;
+  text-align: center;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

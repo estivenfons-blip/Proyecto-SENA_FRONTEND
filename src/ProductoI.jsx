@@ -1,21 +1,33 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import RealizarPedido from './RealizarPedido'
 
 function ProductoI() {
+  const [pedido, setPedido] = useState(false)
+
+  function realizarPedido() {
+    setPedido(!pedido)
+  }
+  if (pedido) {
+    return (
+      <>
+        <RealizarPedido />
+      </>
+    )
+  }
 
   return (
-    <div>
+    <>
+
       {/* Productos individuales */}
       <div class="colision">
         <input type="image" name="productoI" id="productoI" />
         <h3>Producto</h3>
         <br />
-        <button>Productosssssss</button>
+        <button onClick={realizarPedido}>Realizar Pedido</button>
       </div>
 
-    </div>
+    </>
   );
 }
 

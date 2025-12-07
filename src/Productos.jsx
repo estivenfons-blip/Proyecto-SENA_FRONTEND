@@ -3,19 +3,18 @@ import './App.css'
 import ProductoI from './ProductoI'
 
 function Productos() {
-const [Entrar, setEntrar] = useState(false)
+  const [entrar, setEntrar] = useState(false)
 
   function Producto() {
-
-    if (Entrar){
-      alert ("Ok")
-      setEntrar(true)
-    };
+    setEntrar(!entrar)
   }
-  if(Entrar){
-    return<ProductoI/>
+  if (entrar) {
+    return (
+      <>
+        <ProductoI />
+      </>
+    )
   }
-  
 
   return (
     <>
@@ -30,42 +29,42 @@ const [Entrar, setEntrar] = useState(false)
           <br />
           <input type="image" name="producto" id="producto" />
           <br />
-          <button>Producto 2</button>
+          <button onClick={Producto}>Producto 2</button>
           <br />
           <br />
           <input type="image" name="producto" id="producto" />
           <br />
-          <button>Producto 3</button>
+          <button onClick={Producto}>Producto 3</button>
           <br />
           <br />
           <input type="image" name="producto" id="producto" />
           <br />
-          <button>Producto 4</button>
+          <button onClick={Producto}>Producto 4</button>
           <br />
           <br />
           <input type="image" name="producto" id="producto" />
           <br />
-          <button>Producto 5</button>
+          <button onClick={Producto}>Producto 5</button>
           <br />
           <br />
           <input type="image" name="producto" id="producto" />
           <br />
-          <button>Producto 6</button>
+          <button onClick={Producto}>Producto 6</button>
           <br />
           <br />
           <input type="image" name="producto" id="producto" />
           <br />
-          <button>Producto 7</button>
+          <button onClick={Producto}>Producto 7</button>
           <br />
           <br />
           <input type="image" name="producto" id="producto" />
           <br />
-          <button>Producto 8</button>
+          <button onClick={Producto}>Producto 8</button>
           <br />
           <br />
           <input type="image" name="producto" id="producto" />
           <br />
-          <button>Producto 9</button>
+          <button onClick={Producto}>Producto 9</button>
         </h3>
       </div>
 

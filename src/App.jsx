@@ -44,8 +44,8 @@ function App() {
   if (verificado) {
     return (
       <>
-        <Productos recargarAhora={recargarAhora}/>
-        <Registro />
+        <Productos />
+        <Registro recargarAhora={recargarAhora}/>
         <Usuarios recargar={recargar}/>
       </>)
   }
