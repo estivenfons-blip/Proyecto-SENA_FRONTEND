@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import Productos from './Productos'
+import Inventario from './Inventario'
 import Usuarios from './Usuarios'
 import Registro from './Registro'
 
@@ -45,8 +46,9 @@ function App() {
     return (
       <>
         <Productos />
-        <Registro recargarAhora={recargarAhora}/>
+        <Inventario />
         <Usuarios recargar={recargar}/>
+        <Registro recargarAhora={recargarAhora}/>
       </>)
   }
 
